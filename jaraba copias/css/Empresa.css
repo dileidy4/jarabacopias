@@ -1,0 +1,326 @@
+/* Estilos generales */
+body {
+    font-family: 'Montserrat', sans-serif;
+    background-color: #FFC0CB; /* Fondo rosado */
+    margin: 0; /* Elimina el margen predeterminado del cuerpo */
+}
+
+/* Estilos de la barra de desplazamiento */
+body::-webkit-scrollbar {
+    width: 10px; /* Ancho de la barra de desplazamiento */
+}
+  
+/* Estilo del riel de la barra de desplazamiento */
+body::-webkit-scrollbar-track {
+    background-color: #f1f1f1; /* Color del riel */
+    border-radius: 5px; /* Borde redondeado del riel */
+}
+  
+/* Estilo del mango de la barra de desplazamiento */
+body::-webkit-scrollbar-thumb {
+    background-color: transparent; /* Color transparente como base */
+    border-radius: 5px; /* Borde redondeado del mango */
+    box-shadow: inset 0 0 6px rgba(0,0,0,0.3); /* Sombra del mango */
+    transition: background-color 0.5s ease; /* Transición suave del color */
+    background-image: linear-gradient(to bottom, rgba(0,0,0,0.1), rgba(0,0,0,0.5)); /* Degradado lineal */
+}
+
+/* Estilo del mango de la barra de desplazamiento al pasar el mouse */
+body::-webkit-scrollbar-thumb:hover {
+    transition: background-color 0.5s ease; /* Transición suave del color */   
+    background-color: #001F3F; /* Color del mango al pasar el mouse */
+}
+
+/* Estilos del encabezado */
+header {
+    background-color: #001F3F; /* Azul oscuro */
+    color: #fff;
+    padding: 20px;
+    position: relative;
+    text-align: center;
+}
+
+.main-title {
+    font-size: 36px;
+    text-transform: uppercase;
+    position: relative;
+    margin-bottom: 10px; /* Agrega espacio entre el título y la imagen */
+}
+
+.book-icons {
+    position: absolute;
+    top: 2px;
+    left: 10px;
+    width: 100px;
+    height: 100px;
+}
+
+.book-icons2 {
+    position: absolute;
+    top: 2px;
+    right: 10px;
+    width: 100px;
+    height: 100px;
+}
+
+
+.employee-info {
+    width: 100%;
+    box-sizing: border-box;
+    background-color: #fff;
+    padding: auto;
+    margin-bottom: 20px;
+}
+
+.secondary-title {
+    color: #001F3F; /* Azul oscuro */
+    font-size: 20px;
+    text-transform: uppercase;
+    text-align: center;
+    margin-bottom: 20px; /* Agrega espacio entre el título y el contenido */
+}
+   
+.company-logo {
+    max-width: 200px;
+    height: 180px;
+    border-radius: 10px;
+    margin: 10px auto; /* Centra horizontalmente */
+}
+
+.container,
+.company-logo {
+    text-align: center; /* Centra el contenido del logo horizontalmente */
+}
+
+
+/* Estilos de la información de los trabajadores */
+.employee-info {
+    background-color: #fff;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+
+.employee-info {
+    background-color: #fff; /* Color de fondo gris claro */
+    padding: auto;
+    border-radius: 10px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+/* Media queries para dispositivos específicos */
+
+/* Para teléfonos */
+@media screen and (max-width: 600px) {
+    .personal-images {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+/* Para tablets */
+@media screen and (min-width: 601px) and (max-width: 1024px) {
+    .personal-image {
+        max-width: 120px;
+    }
+}
+
+/* Para computadoras */
+@media screen and (min-width: 1025px) {
+    .personal-images {
+        justify-content: space-between;
+    }
+}
+
+/* Estilos del diálogo de texto */
+.cloud-dialog {
+    color: #001F3F; /* Texto azul oscuro */
+    font-size: 16px; /* Tamaño del texto */
+    margin-top: 10px; /* Espacio superior */
+    display: none; /* Inicialmente oculto */
+    background-color: rgba(255, 255, 255, 0.8); /* Fondo semi-transparente blanco */
+    padding: 10px; /* Espaciado interno */
+    border-radius: 5px; /* Borde redondeado */
+}
+
+/* Estilos del botón de información */
+.cloud-info-button {
+    background-color: #001F3F; /* Fondo azul oscuro */
+    border: 2px solid #001F3F; /* Borde azul oscuro */
+    border-radius: 5px; /* Borde redondeado */
+    color: #fff; /* Texto blanco */
+    cursor: pointer;
+    display: block; /* Cambia a bloque para ocupar todo el ancho disponible */
+    margin: 10px auto; /* Ajusta el margen para centrar horizontalmente */
+    font-size: 14px; /* Tamaño del texto */
+    padding: 5px 10px; /* Espaciado interno */
+    text-transform: uppercase; /* Texto en mayúsculas */
+    transition: background-color 0.3s, color 0.3s; /* Transición suave */
+}
+
+.cloud-info-button, .Ubicacion {
+    margin: 0 auto; /* Ajusta el margen para centrar horizontalmente */
+    display: block; /* Cambia a bloque para ocupar todo el ancho disponible */
+    width: fit-content; /* Ajusta el ancho al contenido */
+}
+
+.cloud-info-button:hover {
+    background-color: #fff; /* Fondo blanco al pasar el mouse */
+    color: #001F3F; /* Texto azul oscuro al pasar el mouse */
+}
+
+/* Estilos del diálogo de información */
+.cloud-dialog {
+    color: #001F3F; /* Texto azul oscuro */
+    font-size: 16px; /* Tamaño del texto */
+    margin-top: 10px; /* Espacio superior */
+    display: none; /* Inicialmente oculto */
+    background-color: rgba(255, 255, 255, 0.8); /* Fondo semi-transparente blanco */
+    padding: 10px; /* Espaciado interno */
+    border-radius: 5px; /* Borde redondeado */
+}
+
+/* Estilos del botón de Ubicacion */
+.Ubicacion {
+    background-color: #001F3F; /* Fondo azul oscuro */
+    border: 2px solid #001F3F; /* Borde azul oscuro */
+    border-radius: 5px; /* Borde redondeado */
+    color: #fff; /* Texto blanco */
+    cursor: pointer;
+    display: block; /* Cambia a bloque para ocupar todo el ancho disponible */
+    margin: 10px auto; /* Ajusta el margen para centrar horizontalmente */
+    font-size: 14px; /* Tamaño del texto */
+    padding: 5px 10px; /* Espaciado interno */
+    text-transform: uppercase; /* Texto en mayúsculas */
+    transition: background-color 0.3s, color 0.3s; /* Transición suave */
+}
+
+.Ubicacion:hover {
+    background-color: #fff; /* Fondo blanco al pasar el mouse */
+    color: #001F3F; /* Texto azul oscuro al pasar el mouse */
+}
+
+/* Estilos del diálogo de información */
+.ubicacion-info {
+    color: #001F3F; /* Texto azul oscuro */
+    font-size: 16px; /* Tamaño del texto */
+    margin-top: 10px; /* Espacio superior */
+    display: none; /* Inicialmente oculto */
+    background-color: rgba(255, 255, 255, 0.8); /* Fondo semi-transparente blanco */
+    padding: 10px; /* Espaciado interno */
+    border-radius: 5px; /* Borde redondeado */
+}
+
+.enlace-diseño-js {
+    text-decoration: none; /* Esto elimina la línea subrayada */
+    background-color: #4CAF50; /* Color de fondo del botón */
+    color: white; /* Color del texto */
+    padding: 14px 20px; /* Espaciado alrededor del texto */
+    border-radius: 8px; /* Bordes redondeados */
+    font-size: 18px; /* Tamaño del texto */
+    transition: all 0.5s; /* Transición suave de los estilos */
+}
+  
+/* Estilos del contenedor del menú desplegable */
+.dropdown {
+    position: relative;
+    display: inline-block;
+  }
+  
+  /* Estilos del botón */
+  .dropbtn {
+    background-color: #001F3F;
+    color: white;
+    padding: 10px 20px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  /* Estilos del botón al pasar el mouse */
+  .dropbtn:hover {
+    background-color: #002b57;
+  }
+  
+  /* Estilos del contenido del menú desplegable */
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    animation: fadeIn 0.3s ease;
+  }
+  
+  /* Estilos de los enlaces del menú desplegable */
+  .dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    transition: background-color 0.3s ease;
+  }
+  
+  /* Estilos de los enlaces al pasar el mouse */
+  .dropdown-content a:hover {
+    background-color: #ddd;
+  }
+  
+  /* Mostrar el menú desplegable cuando el botón se haga clic */
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
+  
+  /* Animación de aparición del menú desplegable */
+  @keyframes fadeIn {
+    0% {
+      opacity: 0;
+      transform: translateY(-10px);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  /* Ajustes de estilo para el menú desplegable en dispositivos móviles */
+  @media screen and (max-width: 600px) {
+    .dropdown-content {
+      position: relative;
+      display: block;
+      width: 100%;
+      animation: none;
+    }
+  }
+  
+/* Estilos del footer */
+footer {
+    background-color: #001F3F; /* Color de fondo del footer similar al del header */
+    color: #fff; /* Color del texto en el footer */
+    padding: 10px; /* Espaciado interno */
+    text-align: center; /* Alineación del texto */
+}
+
+.footer-title {
+    font-size: 20px; /* Reducir el tamaño del título del footer */
+    margin-bottom: 5px; /* Reducir el espacio inferior */
+}
+
+.estilo-elegante {
+    color: #3c3c3c; /* Cambia esto al color que prefieras */
+    font-family: 'Montserrat', sans-serif; /* Usamos la fuente Montserrat que mencionaste antes */
+    font-size: 1.2em; /* Cambia esto al tamaño de fuente que prefieras */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Esto añade una sombra suave al texto */
+  }
+  
